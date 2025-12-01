@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <div class="div2">Div2</div>
+          <div class="div1">Div1</div>
+        </div>
+  
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background-color: #f4f4f4;
+        }
+    
+        .container {
+          width: 600px;
+          height: 200px;
+          background-color: white;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+        }
+
+        .div1{ /*para tener en cuenta los elementos flotantes*/ 
+
+          display: flow-root;
+        }
+    
+        .div1, .div2 {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+        }
+    
+        .div1 {
+          background-color: pink;
+        }
+    
+        .div2 {
+          background-color: cyan;
+        }
+      </style>
+    </head>
+    
+    
+ 
+    
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html> <!-- Indica que el documento usa HTML5 -->
+
+<html lang="es"> <!-- Idioma principal: español -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Permite caracteres especiales (ñ, tildes, etc.) -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Usa el motor más moderno en IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño adaptable a móviles -->
+  
+  <title>2024-11-15. Examen Maq. Tradicional</title> <!-- Título que se muestra en la pestaña del navegador -->
+
+  <!-- ==================== ESTILOS CSS INCLUIDOS ==================== -->
+  <style>
+    /* ==================== ESTILOS GENERALES ==================== */
+    body {
+      font-family: Arial, sans-serif; /* Fuente general */
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4; /* Fondo gris claro */
+      color: #333;
+    }
+
+    #container {
+      width: 90%;
+      margin: 0 auto; /* Centra el contenido */
+      max-width: 1200px;
+    }
+
+    /* ==================== ENCABEZADO ==================== */
+    header {
+      background-color: #222; /* Fondo oscuro */
+      color: white;
+      padding: 15px 0;
+    }
+
+    .logo {
+      text-decoration: none; /* Quita subrayado del enlace */
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 40px;
+      vertical-align: middle; /* Centra la imagen con el texto */
+      margin-right: 10px;
+    }
+
+    .login {
+      text-decoration: none;
+      color: white;
+      background-color: #555;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .login:hover {
+      background-color: #777;
+    }
+
+    /* Alineación flotante */
+    .f-left { float: left; }
+    .f-right { float: right; }
+
+    /* Limpia flotados para evitar colapsos en el layout */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* ==================== TITULO PRINCIPAL ==================== */
+    .title {
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    /* ==================== SISTEMA DE COLUMNAS ==================== */
+    .row {
+      display: flex;
+      flex-wrap: wrap; /* Permite que las columnas bajen si no caben */
+      margin-bottom: 20px;
+    }
+
+    /* Clases base de columnas */
+    [class*="col-"] {
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Por defecto (móvil) las columnas ocupan todo el ancho */
+    .col-t-12, .col-d-12, .col-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    /* ==================== COLUMNAS PARA TABLET ==================== */
+    @media (min-width: 600px) {
+      .col-t-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .col-t-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* ==================== COLUMNAS PARA DESKTOP ==================== */
+    @media (min-width: 992px) {
+      .col-d-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+
+      .col-d-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .col-d-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* ==================== GALERÍA DE IMÁGENES ==================== */
+    .img-container {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .img-container:hover {
+      transform: scale(1.03);
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .img-title {
+      padding: 10px;
+      font-weight: bold;
+      background-color: #eee;
+    }
+  </style>
+  <!-- ==================== FIN DE LOS ESTILOS CSS ==================== -->
+</head>
+
+<body>
+  <div id="container"> <!-- Contenedor general -->
+    
+    <!-- ==================== ENCABEZADO ==================== -->
+    <header class="clearfix">
+      
+      <!-- Logo alineado a la izquierda -->
+      <a href="#" class="logo f-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="logo"> <!-- Ejemplo de logo -->
+        <span>RANDOMWEB</span>
+      </a>
+
+      <!-- Enlace Login alineado a la derecha -->
+      <a href="login.html" class="login f-right">Login</a>
+    </header>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main>
+
+      <!-- Primera fila con título -->
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title">RANDOMWEB</h1>
+        </div>
+      </div>
+
+      <!-- Segunda fila: galería de imágenes -->
+      <div class="row">
+        
+        <!-- Imagen 1 -->
+        <div class="col-d-4 col-t-6">
+          <div class="img-container">
+            <img src="https://picsum.photos/id/0/400/400" alt="">
+            <div class="img-title">Lorem ipsum 1</div>
+          </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="col-d-4 col-t-6">
+          <div class="img-container">
+            <img src="https://picsum.photos/id/1/400/400" alt="">
+            <div class="img-title">Lorem ipsum 2</div>
+          </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="col-d-4 col-t-12">
+          <div class="img-container">
+            <img src="https://picsum.photos/id/3/400/400" alt="">
+            <div class="img-title">Lorem ipsum 3</div>
+          </div>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="col-d-6 col-t-6">
+          <div class="img-container">
+            <img src="https://picsum.photos/id/4/400/400" alt="">
+            <div class="img-title">Lorem ipsum 4</div>
+          </div>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="col-d-6 col-t-6">
+          <div class="img-container">
+            <img src="https://picsum.photos/id/5/400/400" alt="">
+            <div class="img-title">Lorem ipsum 5</div>
+          </div>
+        </div>
+
+      </div> <!-- Fin de la fila de imágenes -->
+    </main>
+
+  </div> <!-- Fin del contenedor general -->
+</body>
+
+</html>
