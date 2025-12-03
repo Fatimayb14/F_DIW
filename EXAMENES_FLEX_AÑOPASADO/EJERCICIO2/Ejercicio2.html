@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2023-12-13. Examen Flex. DIW</title>
-  <link rel="stylesheet" href="Columnas.css">
   <link rel="stylesheet" href="Ejercicio2.css">
+  <link rel="stylesheet" href="Columnas.css">
 </head>
 
 <body>
@@ -28,16 +28,16 @@
     </div>
 
     <h2>Fila 2. La zona central ocupa siempre el 50% del espacio disponible. Las otras dos zonas se reparten el espacio disponible, pero si se elimina una de ellas, la que queda se apropia del espacio que ha dejado la columna eliminada. Todas ocupan el 100% para móviles.</h2>
-
-    <div class="row fila-2">
+    <div class="row fila-2"><!--Ese código crea una fila con dos columnas.-->
       <div class="col">
         <p>Zona izquierda.</p>
       </div>
-      <div class="col-e-6 col-t-6">
+      <div class="col-e-6 col-t-6"> <!--La primera columna ocupa todo el ancho en móvil, y la segunda ajusta su ancho en tablet y escritorio gracias a las clases col-t-6 y col-e-6.-->
         <p>Zona central.</p>
       </div>
 
     </div>
+  
 
   </div>
 </body>

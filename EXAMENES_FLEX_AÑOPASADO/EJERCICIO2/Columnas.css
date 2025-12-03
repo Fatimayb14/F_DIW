@@ -12,15 +12,15 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;/*permite que los elementos flex se vayan a la siguiente línea cuando ya no caben en una sola fila.*/
 }
 
 .row > * {
-  border: 1px solid #999;
+  border: 1px solid #999; /*Selecciona todos los elementos hijos directos de .row y les pone un borde gris (#999) de 1 px.*/
 }
 
 .fila-1 :first-child {
-  /* Para móviles, la zona derecha debe aparecer antes que la izquierda, así que damos un orden mayor que 0 al otro elemento */
+  /* Para móviles, la zona derecha debe aparecer antes que la izquierda, así que damos una orden mayor que 0 al otro elemento */
   order: 1;
 }
 
@@ -28,7 +28,7 @@
 @media only screen and (min-width: 600px) {
   /* Reseteamos el valor de order a partir de 600px */
   .fila-1 :first-child {
-    order: 0;
+    order: 0;/*El que tenga un número de order más pequeño se mueve hacia la izquierda (o más arriba).*/
   }
 
   .col-t-1 {
